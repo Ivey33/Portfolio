@@ -242,6 +242,8 @@ body {
 .rightWrapper {
   margin-left: 50%;
   margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .leftWrapper {
@@ -279,6 +281,14 @@ ul {
   list-style: square;
   margin-bottom: 30px;
   padding-left: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+  padding: 35px 40px 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+          box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
 h1 {

@@ -5,6 +5,8 @@ body {
 .rightWrapper  {  
   margin-left: 50%;
   margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   
 }
 
@@ -44,5 +46,12 @@ ul {
   padding-left: 20px;
 }
 
+
+section{
+  margin-bottom: 50px;
+  padding:35px 40px 40px;
+  border-radius: 10px;
+  box-shadow: $shadow1;
+}
 
 
