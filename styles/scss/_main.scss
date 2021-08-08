@@ -4,3 +4,25 @@ h2 {
   font-size: 30px;
 }
 
+.skills ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  list-style: none;
+  margin-right: 17px;
+  margin-bottom: 17px;
+  width: 81px;
+  height: 81px;
+  line-height: 81px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: $background1;
+  box-shadow: $shadow1;
+}
+
