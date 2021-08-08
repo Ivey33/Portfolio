@@ -1,0 +1,48 @@
+body {
+  background-color: $darkgrey;
+}
+
+.rightWrapper  {  
+  margin-left: 50%;
+  margin-right: 5%;
+  
+}
+
+.leftWrapper {
+  margin-left: 11%;
+}
+
+h1, h2 {
+  color: $white;
+  font-family: $secondaryFont;
+  margin-bottom: 20px;
+}
+
+h3, h4 {
+  color: $lightgrey;
+  margin-bottom: 20px;
+}
+
+
+p, a, label{
+  color: $grey;
+  font-family: $primaryFont;
+  font-size: 18px;
+}
+
+span {
+  color: $red;
+}
+
+.middleSplit {
+  display: flex;
+}
+
+ul {
+  list-style: square;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+
+

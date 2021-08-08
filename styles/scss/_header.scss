@@ -1,0 +1,35 @@
+
+h1 {
+  font-size: 70px;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 35%;
+  margin-top: 200px;
+}
+
+header img {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  image-orientation: initial;
+}
+
+.headerBtn {
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: $shadow1;
+  transition: $transition;
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+
