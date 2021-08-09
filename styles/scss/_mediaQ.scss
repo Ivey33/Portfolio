@@ -1,0 +1,28 @@
+
+@media (max-width: 1245px) {
+  
+  .middleSplit {
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    flex: 0 0 100%;
+  }
+
+  input, textarea{
+    width: 80%;
+  }
+  header{
+    
+    position: relative;
+    width: 80%;
+    margin-bottom: 50px;
+    
+  }
+
+  .rightWrapper, .leftWrapper  {  
+    margin: 50px 100px;
+    max-width: 1400px;
+    
+  }
+}

@@ -9,17 +9,18 @@ header {
   flex-direction: column;
   position: fixed;
   width: 35%;
-  margin-top: 200px;
+  margin-top: 175px;
 }
 
 header img {
   border-radius: 50%;
+  background-position: 0px;
   height: 180px;
   width: 180px;
   image-orientation: initial;
 }
 
-.headerBtn, form a {
+.headerBtn, .formSection a {
   display: inline-block;
   padding: 15px 35px;
   margin: 15px;
@@ -30,6 +31,12 @@ header img {
   transition: $transition;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.4s;
+  
   
 }
 
+.headerBtn:hover, .formSection a:hover {
+  transform: translateY(-5px);
+  background: $hoverbackground;
+}

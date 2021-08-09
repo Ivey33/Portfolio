@@ -304,17 +304,18 @@ header {
           flex-direction: column;
   position: fixed;
   width: 35%;
-  margin-top: 200px;
+  margin-top: 175px;
 }
 
 header img {
   border-radius: 50%;
+  background-position: 0px;
   height: 180px;
   width: 180px;
   image-orientation: initial;
 }
 
-.headerBtn, form a {
+.headerBtn, .formSection a {
   display: inline-block;
   padding: 15px 35px;
   margin: 15px;
@@ -327,10 +328,29 @@ header img {
   transition: 0.4s;
   font-size: 14px;
   font-weight: 500;
+  transition: 0.4s;
+}
+
+.headerBtn:hover, .formSection a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background: -webkit-gradient(linear, left top, right bottom, from(#212428), to(#16181c));
+  background: linear-gradient(to right bottom, #212428, #16181c);
 }
 
 h2 {
   font-size: 30px;
+  position: relative;
+}
+
+main h2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #121415;
+  bottom: -10px;
+  left: 0;
 }
 
 .skills ul {
@@ -365,4 +385,142 @@ h2 {
   background: linear-gradient(145deg, #1e2024, #23272b);
   -webkit-box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
           box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.skills li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background: -webkit-gradient(linear, left top, right bottom, from(#212428), to(#16181c));
+  background: linear-gradient(to right bottom, #212428, #16181c);
+}
+
+.skills li img {
+  max-height: 30px;
+}
+
+.apiIcon, .sassIcon {
+  background-color: white;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.formGroup {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+input {
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  width: 90%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #c4cfde;
+  -webkit-box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+          box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  letter-spacing: 1px;
+}
+
+input:active, input:hover, textarea:active, textarea:hover {
+  border-color: #ff014f;
+}
+
+textarea {
+  background-color: #191b1e;
+  border-radius: 6px;
+  width: 190%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #c4cfde;
+  -webkit-box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+          box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  letter-spacing: 1px;
+}
+
+label {
+  font-size: 12px;
+  color: #a0a8b3;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 14px;
+  margin-top: 10px;
+  text-align: left;
+  display: block;
+}
+
+.formSection a {
+  margin-left: -10px;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  border-radius: 50%;
+  background-color: #212428;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+          box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+i {
+  color: white;
+  font-size: 50px;
+}
+
+@media (max-width: 1245px) {
+  .middleSplit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .formGroup {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+
+  input, textarea {
+    width: 80%;
+  }
+
+  header {
+    position: relative;
+    width: 80%;
+    margin-bottom: 50px;
+  }
+
+  .rightWrapper, .leftWrapper {
+    margin: 50px 100px;
+    max-width: 1400px;
+  }
 }

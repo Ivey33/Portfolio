@@ -2,6 +2,17 @@
 
 h2 {
   font-size: 30px;
+  position: relative;
+}
+
+main h2::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #121415;
+  bottom: -10px;
+  left: 0;
 }
 
 .skills ul {
@@ -24,5 +35,21 @@ h2 {
   border-radius: 6px;
   background: $background1;
   box-shadow: $shadow1;
+  transition: 0.4s;
 }
+
+.skills li:hover {
+  transform: translateY(-5px);
+  background: $hoverbackground;
+  
+}
+
+.skills li img {
+  max-height: 30px;
+}
+
+.apiIcon, .sassIcon {
+  background-color: white;
+}
+
 
