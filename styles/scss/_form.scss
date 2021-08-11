@@ -3,11 +3,16 @@ form {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  
 }
 
 .formGroup {
-  flex: 0 0 50%;
+  flex: 0 0 50%;  
   
+}
+
+.textForm {
+  flex: 0 0 100%;
 }
 
 input  {
@@ -21,7 +26,7 @@ input  {
   font-size: 14px;
   font-family: $secondaryFont;
   color: $lightgrey;
-  box-shadow: $innershadow;
+  box-shadow: $inndershadow;  
   letter-spacing: 1px;
 }
 
@@ -32,15 +37,15 @@ input:active, input:hover, textarea:active, textarea:hover {
 textarea {
   background-color: #191b1e;
   border-radius: 6px;
-  width: 190%;
   transition: 0.4s;
   border: 2px solid #191b1e;
   padding: 0 15px;
   font-size: 14px;
   font-family: $secondaryFont;
   color: $lightgrey;
-  box-shadow: $innershadow;
+  box-shadow: $inndershadow;
   letter-spacing: 1px;
+  width: 95%;
 }
 
 label {
@@ -57,7 +62,25 @@ label {
   display: block;
 }
 
-.formSection a {
-  margin-left: -10px;
+.submitForm {
+  margin-left: -15px;
+}
+
+input[type="submit"] {  
+  border: none;
+  font-family: $secondaryFont;
+  margin-top: 20px;
+  color: $red;  
+  
   
 }
+
+input[type="submit"]:hover, input[type="submit"]:active {
+  animation: flicker 4s infinite;
+  border:2px solid $red;
+  transform: translateY(-5px);
+  background: $hoverbackground;
+
+}
+
+

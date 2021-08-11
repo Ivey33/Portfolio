@@ -264,7 +264,7 @@ h3, h4 {
 p, a, label {
   color: #878e99;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 span {
@@ -291,7 +291,7 @@ section {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 4.3rem;
 }
 
 header {
@@ -315,7 +315,7 @@ header img {
   image-orientation: initial;
 }
 
-.headerBtn, .formSection a {
+.headerBtn, .formSection input[type=submit] {
   display: inline-block;
   padding: 15px 35px;
   margin: 15px;
@@ -397,11 +397,21 @@ main h2::after {
 }
 
 .skills li img {
-  max-height: 30px;
+  max-height: 50px;
 }
 
-.apiIcon, .sassIcon {
-  background-color: white;
+.portfolio ul li {
+  color: #878e99;
+}
+
+.portfolio ul li a {
+  text-decoration: none;
+}
+
+.portfolio ul li a:hover {
+  color: #ff014f;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 form {
@@ -418,6 +428,12 @@ form {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+}
+
+.textForm {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
 }
 
 input {
@@ -444,7 +460,6 @@ input:active, input:hover, textarea:active, textarea:hover {
 textarea {
   background-color: #191b1e;
   border-radius: 6px;
-  width: 190%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 2px solid #191b1e;
@@ -455,6 +470,7 @@ textarea {
   -webkit-box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
           box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   letter-spacing: 1px;
+  width: 95%;
 }
 
 label {
@@ -471,28 +487,47 @@ label {
   display: block;
 }
 
-.formSection a {
-  margin-left: -10px;
+.submitForm {
+  margin-left: -15px;
+}
+
+input[type=submit] {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  color: #ff014f;
+}
+
+input[type=submit]:hover, input[type=submit]:active {
+  -webkit-animation: flicker 4s infinite;
+          animation: flicker 4s infinite;
+  border: 2px solid #ff014f;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background: -webkit-gradient(linear, left top, right bottom, from(#212428), to(#16181c));
+  background: linear-gradient(to right bottom, #212428, #16181c);
 }
 
 .backToTop {
   position: fixed;
   bottom: 50px;
-  right: 30px;
+  right: 15px;
   cursor: pointer;
   width: 50px;
   height: 50px;
   line-height: 46px;
   border-radius: 50%;
-  background-color: #212428;
   text-align: center;
+  background: linear-gradient(145deg, #1e2024, #23272b);
   -webkit-box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
           box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
 i {
   color: white;
-  font-size: 50px;
+  font-size: 33px;
+  position: relative;
+  top: 9px;
 }
 
 @media (max-width: 1245px) {
@@ -522,5 +557,51 @@ i {
   .rightWrapper, .leftWrapper {
     margin: 50px 100px;
     max-width: 1400px;
+  }
+}
+@media (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p, a, button {
+    font-size: 15px;
+  }
+
+  header {
+    width: 250px;
+  }
+
+  .headerBtn, .formSection input[type=submit] {
+    font-size: 15px;
+  }
+
+  .formSection input[type=submit] {
+    padding: 5px;
+  }
+
+  .rightWrapper, .leftWrapper {
+    margin: 50px 50px;
+    max-width: 1400px;
+  }
+
+  .headerBtn {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media (max-width: 330px) {
+  header {
+    width: 200px;
+  }
+
+  .formSection input[type=submit] {
+    font-size: 12px;
+    padding: 5px;
   }
 }

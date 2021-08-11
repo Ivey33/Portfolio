@@ -26,3 +26,59 @@
     
   }
 }
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p, a, button {
+    font-size: 15px;
+  }
+
+  header {
+    width: 250px;
+  }
+
+  .headerBtn, .formSection input[type="submit"] {
+    font-size: 15px;
+  }
+
+  .formSection input[type="submit"] {
+    padding: 5px;
+  }
+
+  .rightWrapper, .leftWrapper  {  
+    margin: 50px 50px;
+    max-width: 1400px;
+    
+  }
+
+  .headerBtn {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+
+}
+
+@media (max-width: 330px) { 
+
+  header {
+    width: 200px;
+  }
+
+  .formSection input[type="submit"] {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+
+
+}

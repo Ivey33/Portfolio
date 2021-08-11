@@ -1,6 +1,6 @@
 
 h1 {
-  font-size: 70px;
+  font-size: 4.3rem;
 }
 
 
@@ -20,7 +20,7 @@ header img {
   image-orientation: initial;
 }
 
-.headerBtn, .formSection a {
+.headerBtn, .formSection input[type="submit"]{
   display: inline-block;
   padding: 15px 35px;
   margin: 15px;

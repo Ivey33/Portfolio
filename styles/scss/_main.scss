@@ -45,11 +45,20 @@ main h2::after {
 }
 
 .skills li img {
-  max-height: 30px;
+  max-height: 50px;
 }
 
-.apiIcon, .sassIcon {
-  background-color: white;
+.portfolio ul li {
+  color: $grey;
+}
+
+.portfolio ul li a {
+  text-decoration: none;
+}
+
+.portfolio ul li a:hover {
+  color: $red;
+  transition: 0.8s;
 }
 
 
