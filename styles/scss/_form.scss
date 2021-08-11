@@ -76,7 +76,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover, input[type="submit"]:active {
-  animation: flicker 4s infinite;
   border:2px solid $red;
   transform: translateY(-5px);
   background: $hoverbackground;

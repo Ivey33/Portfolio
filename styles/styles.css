@@ -514,8 +514,6 @@ input[type=submit] {
 }
 
 input[type=submit]:hover, input[type=submit]:active {
-  -webkit-animation: flicker 4s infinite;
-          animation: flicker 4s infinite;
   border: 2px solid #ff014f;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -543,6 +541,24 @@ i {
   font-size: 33px;
   position: relative;
   top: 9px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.socials a {
+  display: block;
+  text-align: center;
+  width: 20px;
+  margin-left: 20px;
+}
+
+footer p {
+  text-align: center;
 }
 
 @media (max-width: 1245px) {
