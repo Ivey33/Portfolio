@@ -66,16 +66,28 @@ label {
   margin-left: -15px;
 }
 
-input[type="submit"] {  
+form button {  
   border: none;
   font-family: $secondaryFont;
   margin-top: 20px;
   color: $red;  
+  background-color: #191b1e;
+  border-radius: 6px;
+  height: 55px;
+  width:90%;
+  transition: 0.4s;
+  border: 2px solid #191b1e;
+  padding: 0 15px;
+  font-size: 14px;
+  font-family: $secondaryFont;
+  color: $lightgrey;
+  box-shadow: $inndershadow;  
+  letter-spacing: 1px;
   
   
 }
 
-input[type="submit"]:hover, input[type="submit"]:active {
+form button:hover, form button:active {
   border:2px solid $red;
   transform: translateY(-5px);
   background: $hoverbackground;
