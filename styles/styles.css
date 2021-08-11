@@ -338,6 +338,21 @@ header img {
   background: linear-gradient(to right bottom, #212428, #16181c);
 }
 
+.shortAboutMe a {
+  text-decoration: none;
+}
+
+.shortAboutMe a span {
+  color: #c4cfde;
+  font-weight: 700;
+}
+
+.shortAboutMe a span:hover {
+  color: #ff014f;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 h2 {
   font-size: 30px;
   position: relative;
@@ -463,7 +478,7 @@ textarea {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 2px solid #191b1e;
-  padding: 0 15px;
+  padding: 15px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   color: #c4cfde;

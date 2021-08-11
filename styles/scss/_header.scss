@@ -40,3 +40,17 @@ header img {
   transform: translateY(-5px);
   background: $hoverbackground;
 }
+
+.shortAboutMe a {
+  text-decoration: none;
+}
+
+.shortAboutMe a span {
+  color: $lightgrey;
+  font-weight: 700;
+}
+
+.shortAboutMe a span:hover {
+  color: $red;
+  transition: 0.8s;
+}

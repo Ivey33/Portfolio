@@ -28,7 +28,7 @@
         <h2>Front-End Web Developer</h2>
       </div>
       <div class="shortAboutMe">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus consectetur quas dolorem optio, cupiditate corporis natus odio molestiae obcaecati repellendus doloribus ipsa dicta tempora sunt deserunt nobis incidunt? Aut.</p>
+        <p>Hey, how you doing, this webpage is to tell you a little <a href="#aboutMeSectionID"> <span>about me</span> </a> a show off a little of <a href="#skillsId"><span>my skills.</span></a> Below you will see <a href="#portfolioId"><span>my portfolio</span></a> and even <a href="#testimonialId"><span>some remarks from my co-workers and classmates</span></a> who can vouch for me. </p>
       </div>
       <div class="hireMe">
         <a href="https://www.canva.com/design/DAEjt9RojtI/ZrD9t8z690UBIhzrWHd28Q/edit"  target="_blank" class="headerBtn"><span>Download My CV</span></a>
@@ -42,7 +42,7 @@
       <!-- Start of Scroll Section -->
       
       <!-- Start of About me Section -->
-      <section class="aboutMeSection">
+      <section class="aboutMeSection" id="aboutMeSectionID">
         <div class="aboutMe">
           <h2>About Me</h2>
           <p>I am a detail oriented Front-End developer with a passion for creating, repairing, building, and innovating. My diverse background in corporate and investing allows me to excel at logical thinking and creative problem solving, allowing development to be the perfect field for my skillset. I love dry, responsive, accesible code and bring expierence developing applications in Javascript, React, jQuery, CSS/SCSS, and HTML</p>
@@ -53,7 +53,7 @@
       
       
       <!-- Start of Skills Section -->
-      <section class="skillsSection">
+      <section class="skillsSection" id="skillsId">
         <div class="skills">
           <h2>About my Skill</h2>
           <div class="skillsContainer">
@@ -92,7 +92,7 @@
       
       
       <!-- Start of Portfolio Section Here -->
-      <section class="portfolioSection">
+      <section class="portfolioSection" id="portfolioId">
         <div class="portfolio">
           <h2>Portfolio</h2>
           <ul>
@@ -105,7 +105,7 @@
       
       
       <!-- Start of Testimonial Section Here -->
-      <section class="testimonialSection">
+      <section class="testimonialSection" id="testimonialId">
         <div class="testimonials">
           <h2>Testimonials</h2>
           <!-- <button class="leftButton">L</button>
@@ -156,26 +156,26 @@
       <section class="formSection">
         <h2>Contact With Me</h2>
         <div class="form">
-          <form method="POST" netlify>
+          <form action="https://formsubmit.co/austin.ivey33@gmail.com" method="POST">
             <div class="formGroup">
               <label for="name">Your Name</label>
-              <input class="formInput" type="text" name="name" id="name">
+              <input class="formInput" type="text" name="name" id="name" required>
             </div>
             <div class="formGroup">
               <label for="phone">Phone Number</label>
-              <input class="formInput" type="text" name="phone" id="phone">
+              <input class="formInput" type="text" name="phone" id="phone" required>
             </div>
             <div class="formGroup">
               <label for="email">Email</label>
-              <input class="formInput" type="email" name="email" id="email">
+              <input class="formInput" type="email" name="email" id="email" required>
             </div>
             <div class="formGroup">
               <label for="subject">subject</label>
-              <input class="formInput" type="text" name="subject" id="subject">
+              <input class="formInput" type="text" name="subject" id="subject" required>
             </div>
             <div class="formGroup textForm">
               <label for="message">Your Message</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <textarea name="message" id="message" cols="30" rows="10" required></textarea>
             </div>
             <div class="formGroup submitForm">
               <input type="submit" value="SEND MESSAGE">
