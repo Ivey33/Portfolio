@@ -26,7 +26,7 @@ input  {
   font-size: 14px;
   font-family: $secondaryFont;
   color: $lightgrey;
-  box-shadow: $inndershadow;  
+  box-shadow: $innerShadow;  
   letter-spacing: 1px;
 }
 
@@ -43,7 +43,7 @@ textarea {
   font-size: 14px;
   font-family: $secondaryFont;
   color: $lightgrey;
-  box-shadow: $inndershadow;
+  box-shadow: $innerShadow;
   letter-spacing: 1px;
   width: 95%;
 }
@@ -67,30 +67,27 @@ label {
 }
 
 form button {  
-  border: none;
-  font-family: $secondaryFont;
+  font-family: $primaryFont;
   margin-top: 20px;
+  margin-left: 15px;
   color: $red;  
   background-color: #191b1e;
   border-radius: 6px;
   height: 55px;
-  width:90%;
+  width:80%;
   transition: 0.4s;
   border: 2px solid #191b1e;
   padding: 0 15px;
   font-size: 14px;
-  font-family: $secondaryFont;
-  color: $lightgrey;
-  box-shadow: $inndershadow;  
+  box-shadow: $innerShadow;  
   letter-spacing: 1px;
-  
   
 }
 
 form button:hover, form button:active {
   border:2px solid $red;
   transform: translateY(-5px);
-  background: $hoverbackground;
+  background: $hoverBackground;
 
 }
 
