@@ -17,7 +17,9 @@ header img {
   background-position: 0px;
   height: 180px;
   width: 180px;
-  image-orientation: initial;
+  object-fit: cover;
+  object-position: 0 -20px;
+  
 }
 
 .headerBtn, .formSection input[type="submit"]{

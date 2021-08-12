@@ -20,6 +20,7 @@ app.moveToTop = () => {
 
    //Click event to scroll to top
     $(scrollTop).on('click', function () {
+      console.log("clicked");
     $('html, body').animate({
         scrollTop: 0,
         easingType: 'linear',
@@ -31,15 +32,10 @@ app.moveToTop = () => {
 }
 
 
-app.contactForm = () => {
-  $('form').on('submit', (e) => {
-    
-    console.log("clicked");
-  });
-}
+
 
 app.init = () => {
-  app.contactForm();
+  
   app.moveToTop();
 }
 

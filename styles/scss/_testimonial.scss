@@ -1,3 +1,42 @@
+.testHeader a {
+  text-decoration: none;
+
+}
+
+.testHeader h4 {
+  font-weight: normal;
+  font-family: $primaryFont;
+  font-size: 20px;
+}
+
+.testHeader:hover {
+  transform: translateY(-5px);
+  transition: 0.8s;
+  cursor: pointer; 
+  
+  h4 {
+    font-weight: bolder;
+    transition: 0.4s;
+  }
+} 
+
+.testHeader {
+  display: flex;
+  gap: 20px;
+}
+
+.testHeader img {
+  margin: 10px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.charlotte {
+  object-position: 0 0px;
+}
+
 // .carousel {
 //   // display: flex;
 //   // overflow-x: hidden;

@@ -316,7 +316,10 @@ header img {
   background-position: 0px;
   height: 180px;
   width: 180px;
-  image-orientation: initial;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -20px;
+     object-position: 0 -20px;
 }
 
 .headerBtn, .formSection input[type=submit] {
@@ -431,6 +434,50 @@ main h2::after {
   color: #ff014f;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+}
+
+.testHeader a {
+  text-decoration: none;
+}
+
+.testHeader h4 {
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.testHeader:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.testHeader:hover h4 {
+  font-weight: bolder;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.testHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.testHeader img {
+  margin: 10px 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.charlotte {
+  -o-object-position: 0 0px;
+     object-position: 0 0px;
 }
 
 form {
@@ -628,6 +675,10 @@ footer {
     font-size: 20px;
   }
 
+  h4 {
+    font-size: 15px;
+  }
+
   p, a, button {
     font-size: 15px;
   }
@@ -656,7 +707,7 @@ footer {
     margin-left: 0px;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 380px) {
   header {
     width: 200px;
   }
@@ -664,5 +715,17 @@ footer {
   .formSection input[type=submit] {
     font-size: 12px;
     padding: 5px;
+  }
+
+  .testHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0px;
+  }
+
+  .slide {
+    margin-top: 40px;
   }
 }
