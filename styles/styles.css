@@ -436,6 +436,25 @@ main h2::after {
   transition: 0.8s;
 }
 
+.portfolio li {
+  list-style: none;
+}
+
+.portfolio ul {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio h3 {
+  font-weight: 500;
+}
+
+.portfolio h3:hover {
+  color: #ff014f;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 .testHeader a {
   text-decoration: none;
 }
