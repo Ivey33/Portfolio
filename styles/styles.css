@@ -267,6 +267,10 @@ p, a, label {
   font-size: 1.1rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
 span {
   color: #ff014f;
 }
@@ -569,8 +573,21 @@ i {
   margin-left: 20px;
 }
 
-footer p {
+footer {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1245px) {
@@ -616,7 +633,7 @@ footer p {
   }
 
   header {
-    width: 250px;
+    width: 300px;
   }
 
   .headerBtn, .formSection input[type=submit] {
@@ -636,6 +653,7 @@ footer p {
     width: 100%;
     text-align: center;
     font-size: 15px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 330px) {
