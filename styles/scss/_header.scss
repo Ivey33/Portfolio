@@ -39,8 +39,9 @@ header img {
 }
 
 .headerBtn:hover, .formSection a:hover {
-  transform: translateY(-5px);
+  
   background: $hoverBackground;
+  transform: scale(1.2);
 }
 
 .shortAboutMe a {

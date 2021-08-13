@@ -22,6 +22,8 @@ main h2::after {
 }
 
 .skills li {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin-right: 17px;
   margin-bottom: 17px;
@@ -39,7 +41,7 @@ main h2::after {
 }
 
 .skills li:hover {
-  transform: translateY(-5px);
+  transform: scale(1.2);
   background: $hoverBackground;
   
 }

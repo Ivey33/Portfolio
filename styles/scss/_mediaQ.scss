@@ -20,7 +20,7 @@
     
   }
 
-  .rightWrapper, .leftWrapper  {  
+  .rightWrapper  {  
     margin: 50px 100px;
     max-width: 1400px;
     
@@ -45,23 +45,28 @@
     font-size: 15px;
   }
 
-  header {
-    width: 300px;
-  }
-
+  
   .headerBtn, .formSection input[type="submit"] {
     font-size: 15px;
   }
-
+  
   .formSection input[type="submit"] {
     padding: 5px;
   }
-
-  .rightWrapper, .leftWrapper  {  
-    margin: 50px 50px;
+  
+  .rightWrapper {  
+    margin: 50px 30px;
     max-width: 1400px;
     
   }
+    
+  header {
+    width: 300px;
+    margin:100px auto;
+    
+  }
+
+  
 
   .headerBtn {
     width: 100%;
@@ -74,12 +79,15 @@
 
 
 
+
+
 }
 
 @media (max-width: 380px) { 
 
   header {
     width: 200px;
+    margin:100px 50px;
   }
 
   .formSection input[type="submit"] {

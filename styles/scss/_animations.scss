@@ -1,0 +1,20 @@
+
+@keyframes floatFromRight {
+  0% {
+    transform: translateX(100%)
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.fadeRight  {
+  animation: floatFromRight 1.5s 1 ease-in;
+}
+
+.fadeLeft  {
+  animation: floatFromLeft 1.5s 1 ease-in;
+}
+
+// .skillsSection, .portfolioSection, .testimonialSection, .formSection, footer
