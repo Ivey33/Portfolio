@@ -240,6 +240,10 @@ body {
   background-color: #212428;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .rightWrapper {
   margin-left: 50%;
   margin-right: 5%;
@@ -376,6 +380,20 @@ main h2::after {
   left: 0;
 }
 
+.portfolio ul li {
+  color: #878e99;
+}
+
+.portfolio ul li a {
+  text-decoration: none;
+}
+
+.portfolio ul li a:hover {
+  color: #ff014f;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,31 +433,33 @@ main h2::after {
           box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  position: relative;
 }
 
 .skills li:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   background: -webkit-gradient(linear, left top, right bottom, from(#212428), to(#16181c));
   background: linear-gradient(to right bottom, #212428, #16181c);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.skills li:hover img {
+  opacity: 0;
+}
+.skills li:hover h4 {
+  opacity: 1;
 }
 
 .skills li img {
   max-height: 50px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
-.portfolio ul li {
-  color: #878e99;
-}
-
-.portfolio ul li a {
-  text-decoration: none;
-}
-
-.portfolio ul li a:hover {
-  color: #ff014f;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+.skillsContainer h4 {
+  opacity: 0;
 }
 
 .portfolio li {
@@ -684,13 +704,13 @@ footer {
   }
 }
 .fadeRight {
-  -webkit-animation: floatFromRight 1.5s 1 ease-in;
-          animation: floatFromRight 1.5s 1 ease-in;
+  -webkit-animation: floatFromRight 1s 1 ease-in;
+          animation: floatFromRight 1s 1 ease-in;
 }
 
 .fadeLeft {
-  -webkit-animation: floatFromLeft 1.5s 1 ease-in;
-          animation: floatFromLeft 1.5s 1 ease-in;
+  -webkit-animation: floatFromLeft 1s 1 ease-in;
+          animation: floatFromLeft 1s 1 ease-in;
 }
 
 .slick-list {

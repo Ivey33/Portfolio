@@ -2,6 +2,10 @@ body {
   background-color: $darkgrey;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .rightWrapper  {  
   margin-left: 50%;
   margin-right: 5%;

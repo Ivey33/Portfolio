@@ -40,7 +40,7 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('fadeRight');
     } else if (!entry.isIntersecting) {
       // If the element is not visible remove the animation class
-      entry.target.classList.remove('fadeRight');
+      // entry.target.classList.remove('fadeRight');
     }
   });
 });
