@@ -24,7 +24,7 @@ app.moveToTop = () => {
     $('html, body').animate({
         scrollTop: 0,
         easingType: 'linear',
-    }, 2000);
+    }, 1000);
     return false;
 });
 
