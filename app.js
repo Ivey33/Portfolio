@@ -73,18 +73,18 @@ app.testimonialActivation = () => {
       slidesToScroll: 1,
       dots: true,
       arrows: true,
-      adaptiveHeight: true,
+      // adaptiveHeight: true,
       
       cssEase: 'linear',
-      // prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
-      // nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
-      // responsive: [
-      // {
-      //     breakpoint: 1200,
-      //     settings: {
-      //         arrows: false,
-      //     }
-      // }]
+      prevArrow: '<button class="slick-prev prev-arrow"><i class="feather-arrow-left"></i></button>',
+      nextArrow: '<button class="slick-next next-arrow"><i class="feather-arrow-right"></i></button>',
+      responsive: [
+      {
+          breakpoint: 900,
+          settings: {
+              arrows: false,
+          }
+      }]
   });
 }
 
