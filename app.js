@@ -33,73 +33,64 @@ app.moveToTop = () => {
 
 
 // Create the observer
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // If the element is visible add the animation class
-      entry.target.classList.add('fadeRight');
-    } else if (!entry.isIntersecting) {
-      // If the element is not visible remove the animation class
-      // entry.target.classList.remove('fadeRight');
-    }
-  });
-});
-
-
-// so I can add observer to other elements later
-const aboutMe = observer;
-const skills = observer;
-const portfolio = observer;
-const formSec = observer;
-const footer = observer;
-
-// Tell the observer which elements to track
-aboutMe.observe(document.querySelector('.aboutMeSection'));
-skills.observe(document.querySelector('.skillsSection'));
-skills.observe(document.querySelector('.portfolioSection'));
-portfolio.observe(document.querySelector('.testimonialSection'));
-formSec.observe(document.querySelector('.formSection'));
-footer.observe(document.querySelector('footer'));
-
-
-
-// app.testimonialActivation = () => {
-//   $('.carousel').slick({
-//       infinite: true,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       dots: true,
-//       arrows: true,
-//       adaptiveHeight: true,
-//       cssEase: 'linear',
-//       prevArrow: '<button class="slide-arrow prev-arrow"><i class="fas fa-chevron-left"></i></button>',
-//       nextArrow: '<button class="slide-arrow next-arrow"><i class="fas fa-chevron-right"></i></button>'
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       // If the element is visible add the animation class
+//       entry.target.classList.add('fadeRight');
+//     } else if (!entry.isIntersecting) {
+//       // If the element is not visible remove the animation class
+//       // entry.target.classList.remove('fadeRight');
+//     }
 //   });
-// }
+// });
 
-//   // $('.carousel').slick({
-//   //     infinite: true,
-//   //     slidesToShow: 1,
-//   //     slidesToScroll: 1,
-//   //     dots: true,
-//   //     arrows: true,
-//   //     adaptiveHeight: true,
-//   //     cssEase: 'linear',
-//   //     prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-chevron-left"></i></button>',
-//   //     nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-chevron-right"></i></button>',
-//   //     responsive: [
-//   //     {
-//   //         breakpoint: 1200,
-//   //         settings: {
-//   //             arrows: false,
-//   //         }
-//   //     }]
-//   // });
 
+// // so I can add observer to other elements later
+// const aboutMe = observer;
+// const skills = observer;
+// const portfolio = observer;
+// const formSec = observer;
+// const footer = observer;
+
+// // Tell the observer which elements to track
+// aboutMe.observe(document.querySelector('.aboutMeSection'));
+// skills.observe(document.querySelector('.skillsSection'));
+// skills.observe(document.querySelector('.portfolioSection'));
+// portfolio.observe(document.querySelector('.testimonialSection'));
+// formSec.observe(document.querySelector('.formSection'));
+// footer.observe(document.querySelector('footer'));
+
+
+
+app.testimonialActivation = () => {
+
+  $('.carousel').slick({
+      infinite: true,
+      slidesToShow: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: true,
+      adaptiveHeight: true,
+      
+      cssEase: 'linear',
+      // prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
+      // nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+      // responsive: [
+      // {
+      //     breakpoint: 1200,
+      //     settings: {
+      //         arrows: false,
+      //     }
+      // }]
+  });
+}
 
 
 app.init = () => {
-  // app.testimonialActivation();
+  app.testimonialActivation();
   app.moveToTop();
 
 }
