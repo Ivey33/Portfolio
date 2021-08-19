@@ -279,12 +279,6 @@ span {
   color: #ff014f;
 }
 
-.middleSplit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 ul {
   margin-bottom: 30px;
   padding-left: 20px;

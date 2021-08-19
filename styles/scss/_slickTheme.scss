@@ -1,20 +1,4 @@
-// @charset 'UTF-8';
-// /* Slider */
-// .slick-loading .slick-list
-// {
-//     background: #fff url('../../images/ajax-loader.gif') center center no-repeat;
-// }
 
-// /* Icons */
-// @font-face
-// {
-//     font-family: 'slick';
-//     font-weight: normal;
-//     font-style: normal;
-
-//     src: url('../../fonts/slick.eot');
-//     src: url('../../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../../fonts/slick.woff') format('woff'), url('../../fonts/slick.ttf') format('truetype'), url('../../fonts/slick.svg#slick') format('svg');
-// }
 // /* Arrows */
 // .slick-prev,
 // .slick-next
@@ -71,7 +55,7 @@
 //     line-height: 1;
 
 //     opacity: .75;
-//     color: white;
+//     color: $background1;
 
 //     -webkit-font-smoothing: antialiased;
 //     -moz-osx-font-smoothing: grayscale;
@@ -192,7 +176,7 @@
 //     text-align: center;
 
 //     opacity: .25;
-//     color: black;
+//     color: $red;
 
 //     -webkit-font-smoothing: antialiased;
 //     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +184,5 @@
 // .slick-dots li.slick-active button:before
 // {
 //     opacity: .75;
-//     color: black;
+//     color: $red;
 // }
