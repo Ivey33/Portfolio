@@ -646,7 +646,7 @@ main h2::after {
 }
 
 .slick-prev:before {
-  content: "<";
+  content: "";
   font-size: xx-large;
   font-weight: bolder;
 }
@@ -666,7 +666,7 @@ main h2::after {
 }
 
 .slick-next:before {
-  content: ">";
+  content: "";
   font-size: xx-large;
   font-weight: bolder;
 }
@@ -791,6 +791,28 @@ main h2::after {
      object-position: 0 0px;
 }
 
+.carousel button {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.carousel .fa-chevron-left {
+  color: white;
+  font-size: 33px;
+  position: relative;
+  top: 0px;
+  right: 4px;
+}
+
+.carousel .fa-chevron-right {
+  color: white;
+  font-size: 33px;
+  position: relative;
+  top: 0px;
+  right: -2px;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -910,7 +932,7 @@ form button:hover, form button:active {
           box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
 }
 
-i {
+.backToTop i {
   color: white;
   font-size: 33px;
   position: relative;
