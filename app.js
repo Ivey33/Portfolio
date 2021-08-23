@@ -76,8 +76,8 @@ app.testimonialActivation = () => {
       // adaptiveHeight: true,
       
       cssEase: 'linear',
-      prevArrow: '<button class="slick-prev prev-arrow"><i class="feather-arrow-left"></i></button>',
-      nextArrow: '<button class="slick-next next-arrow"><i class="feather-arrow-right"></i></button>',
+      prevArrow: '<button class="slick-prev prev-arrow"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button class="slick-next next-arrow"><i class="fas fa-chevron-right"></i></button>',
       responsive: [
       {
           breakpoint: 900,
