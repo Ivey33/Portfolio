@@ -28,6 +28,7 @@ input  {
   color: $lightgrey;
   box-shadow: $innerShadow;  
   letter-spacing: 1px;
+  outline: none;
 }
 
 input:active, input:hover, textarea:active, textarea:hover {
@@ -46,6 +47,7 @@ textarea {
   box-shadow: $innerShadow;
   letter-spacing: 1px;
   width: 95%;
+  outline: none;
 }
 
 label {

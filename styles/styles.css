@@ -355,6 +355,7 @@ header img {
 .shortAboutMe a span {
   color: #c4cfde;
   font-weight: 700;
+  border-bottom: 1px solid #c4cfde;
 }
 
 .shortAboutMe a span:hover {
@@ -435,8 +436,6 @@ main h2::after {
 }
 
 .skills li:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
   background: -webkit-gradient(linear, left top, right bottom, from(#212428), to(#16181c));
   background: linear-gradient(to right bottom, #212428, #16181c);
   -webkit-transition: 0.8s;
@@ -475,8 +474,8 @@ main h2::after {
 
 .portfolio h3:hover {
   color: #ff014f;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 /* Slider */
@@ -854,6 +853,7 @@ input {
   -webkit-box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
           box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   letter-spacing: 1px;
+  outline: none;
 }
 
 input:active, input:hover, textarea:active, textarea:hover {
@@ -874,6 +874,7 @@ textarea {
           box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   letter-spacing: 1px;
   width: 95%;
+  outline: none;
 }
 
 label {
@@ -2428,8 +2429,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
             flex: 0 0 100%;
   }
 
-  input, textarea {
-    width: 80%;
+  input, textarea, form button {
+    width: 100%;
   }
 
   header {
