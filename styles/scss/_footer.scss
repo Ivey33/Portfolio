@@ -36,6 +36,12 @@
   margin-left: 20px;
 }
 
+.socials a:hover, .socials a:active, .socials a:focus  {
+  transform: scale(1.5);
+  transition: 0.8s;
+  color: $red;
+}
+
 footer {
   text-align: center;
   display: flex;

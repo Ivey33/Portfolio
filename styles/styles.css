@@ -958,6 +958,14 @@ form button:hover, form button:active {
   margin-left: 20px;
 }
 
+.socials a:hover, .socials a:active, .socials a:focus {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  color: #ff014f;
+}
+
 footer {
   text-align: center;
   display: -webkit-box;
