@@ -348,6 +348,12 @@ header img {
           transform: scale(1.2);
 }
 
+.headerBtn:hover, .formSection input[type=submit]:hover {
+  border: 2px solid #ff014f;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .shortAboutMe a {
   text-decoration: none;
 }
