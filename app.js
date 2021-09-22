@@ -20,13 +20,13 @@ app.moveToTop = () => {
 
    //Click event to scroll to top
     $(scrollTop).on('click', function () {
-      console.log("clicked");
-    $('html, body').animate({
+      $('html, body').animate({
         scrollTop: 0,
         easingType: 'linear',
-    }, 1000);
+    },1000 );
     return false;
 });
+
 
 
 }
